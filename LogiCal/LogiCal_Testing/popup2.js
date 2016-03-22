@@ -168,7 +168,7 @@ function downloadICS(){
 	var icsEventLocation = " ";
 	if (!($("#Location").val().replace(/^\s+|\s+$/g, '').length == 0)){
 		icsEventLocation = $("#Location").val();
-	}
+	}  
 	
 	var icsEventDescription = " ";
 	if (!($("#Description").val().replace(/^\s+|\s+$/g, '').length == 0)){
