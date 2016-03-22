@@ -164,7 +164,7 @@ function downloadICS(){
 	if (!($("#Title").val().replace(/^\s+|\s+$/g, '').length == 0)){
 		icsEventTitle = $("#Title").val();
 	}
-	 
+	  
 	var icsEventLocation = " ";
 	if (!($("#Location").val().replace(/^\s+|\s+$/g, '').length == 0)){
 		icsEventLocation = $("#Location").val();
