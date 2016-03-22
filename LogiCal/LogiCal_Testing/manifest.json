@@ -1,0 +1,58 @@
+{
+    "manifest_version": 2,
+    "name": "LogiCal",
+    "version": "1.0",
+    
+  	"description": "Generate Google Calendar events from email!",
+    
+   	"icons": {
+          "16": 	"icons/icon.png",
+          "48": 	"icons/icon.png",
+          "128": 	"icons/icon.png" 
+    },
+    
+    "browser_action": {
+        "default_icon": "icons/icon.png"
+    },
+    
+    "background": {
+		"scripts": ["jsLibrary/lexer.js", 
+					"jsLibrary/lexicon.js", 
+					"jsLibrary/POSTagger.js", 
+					"jsLibrary/sherlock.js", 
+					"jsLibrary/nlp_compromise.js",
+					"jsLibrary/moment.js",
+					"jsLibrary/ForerunnerDB.js",
+					"jsLibrary/jquery-1.8.3.js",
+					"contextMenu.js", 
+					"eventCreator.js", 
+					"extractionUtils/types.js",  
+					"extractionUtils/venueExtraction.js",
+					"extractionUtils/titleExtraction.js",
+					"extractionUtils/dateTimeExtraction.js"
+					],
+					
+		"persistent": false
+	},
+	
+	 
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "storage",
+        "http://*/*",
+        "https://*/*",
+        "cookies",
+        "geolocation",
+        "notifications",
+        "https://maps.google.com/*",
+   		"https://maps.googleapis.com/*"
+    ],
+    
+    "web_accessible_resources": [
+    	"jsLibrary/jquery-1.8.3.js",
+    	"jsLibrary/gmail.js",
+    	"extractPageDetails.js"
+  	]	
+   
+}

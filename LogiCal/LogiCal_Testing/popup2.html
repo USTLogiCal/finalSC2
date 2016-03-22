@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src ="popup2.js"></script>
+	<script src ="jsLibrary/jquery-1.8.3.js"></script>
+	<script src ="jsLibrary/clockpicker.js"></script>
+	<script src ="jsLibrary/jquery.maskedinput.js"></script>
+	<script src ="jsLibrary/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src ="jsLibrary/moment.js"></script>
+ 	<script src ="jsLibrary/multiple-emails.js"></script>
+ 	<script src ="jsLibrary/ics.min.js"></script>
+ 
+	<link rel="stylesheet" type="text/css" href="cssLibrary/jquery-ui-1.9.2.custom.min.css">
+	<link rel="stylesheet" type="text/css" href="cssLibrary/clockpicker.css">
+	<link rel="stylesheet" type="text/css" href="cssLibrary/default.css">
+	<link rel="stylesheet" type="text/css" href="cssLibrary/multiple-emails.css">
+	<link rel="stylesheet" type="text/css" href="cssLibrary/default.css">
+</head>
+
+<body>
+	<form class="form-style-9">
+		<h1 class="pageTitle"><img src="icons/icon.png" id="PageTitleIcon" width="40" height="40" style='vertical-align: middle'> LogiCal - Create new event</h1>
+		<ul>
+			<li>
+				<input type="text" id="Title" list="Titles"name="Title" class="field-style field-full align-none" autocomplete="off" placeholder="Title"/>
+				<datalist id="Titles"></datalist>
+			</li>
+			<li>
+				<input type="text" id="Sender" name="Sender" class="field-style field-full align-none" autocomplete="off" placeholder="Email sender"/>
+			</li>
+			<li>
+				<input type="text" id="Recipients" name="Recipients" class="field-style field-full align-none" autocomplete="off" placeholder="Add guest"/>
+			</li>
+			<li>
+				 <input type="text" id="Location" list="Locations" autocomplete="off" name="Location" class="field-style field-icon align-none" placeholder="Location"/>
+				 <datalist id="Locations"></datalist>
+			</li>
+			<li>
+			    <input type="text" id="StartDate" name="StartDate" class="field-style field-split align-left form-custom" placeholder="Start date"/>
+			    <input type="text" id="StartTime" name="StartTime" class="field-style field-split align-right form-custom" placeholder="Start time"/>
+			</li>
+			<li>
+			    <input type="text" id="EndDate" name="EndDate" class="field-style field-split align-left form-custom" placeholder="End date"/>
+			    <input type="text" id="EndTime" name="EndTime" class="field-style field-split align-right form-custom" placeholder="End time"/>
+			    
+			</li>
+			<li>
+				<input type="checkbox" id="IsAllDay" name="IsAllDay" value="allDayEvent">All day event<br>
+			</li>
+			<li>
+				<textarea id="Description" name="Description" class="field-style" autocomplete="off" placeholder="Description"></textarea>
+			</li>
+			<li>
+				<input type="button" id="downloadICS" name="downloadICS" autocomplete="off" value="Download event as .ics file"/>
+				<input type="button" id="clearHistory" name="clearHistory" autocomplete="off" value="Clear history"/>
+			</li>
+			<li>
+				<input type="submit" id="addGoogleCal" name="addGoogleCal" autocomplete="off" value="Add to Google Calendar!"/>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
